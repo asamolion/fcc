@@ -10,6 +10,10 @@ body {
   height: 100vh;
 }
 
+.welcome-text {
+  text-align: center;
+}
+
 .board {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -18,26 +22,26 @@ body {
   height: 500px;
 }
 
-.item {
+.box {
   position: relative;
   width: 100%;
   padding-bottom: 100%;
   border: 1px solid black;
 }
 
-.item:nth-child(-n + 3) {
+.box:nth-child(-n + 3) {
   border-top-color: white;
 }
 
-.item:nth-child(3n + 1) {
+.box:nth-child(3n + 1) {
   border-left-color: white;
 }
 
-.item:nth-child(3n + 0) {
+.box:nth-child(3n) {
   border-right-color: white;
 }
 
-.item:nth-child(n + 7) {
+.box:nth-child(n + 7) {
   border-bottom-color: white;
 }
 
@@ -49,45 +53,26 @@ body {
   width: 100%;
 }
 
-#top-left {
-}
+#top-left {}
 
-#top {
-}
+#top {}
 
-#top-right {
-}
+#top-right {}
 
-#mid-left {
-}
+#mid-left {}
 
-#mid {
-}
+#mid {}
 
-#mid-right {
-}
+#mid-right {}
 
-#bot-left {
-}
+#bot-left {}
 
-#bot {
-}
+#bot {}
 
-#bot-right {
-}
+#bot-right {}
 
 .row:nth-child(n + 1) {
   border-bottom: 1px solid black;
-}
-
-.box {
-  display: inline-block;
-  width: 32.5%;
-  height: 100%;
-}
-
-.box:nth-child(n + 1) {
-  border-right: 1px solid black;
 }
 
 @media screen and (max-width: 599px) {
@@ -104,11 +89,8 @@ body {
   }
 }
 
-@media screen and (min-width: 600px) {
-}
+@media screen and (min-width: 600px) {}
 
-@media screen and (min-width: 900px) {
-}
+@media screen and (min-width: 900px) {}
 
-@media screen and (min-width: 1200px) {
-}
+@media screen and (min-width: 1200px) {}
